@@ -3,3 +3,9 @@
 .RData
 .Ruserdata
 .RDataTmp
+
+/.quarto/
+**/*.quarto_ipynb
+_site/
+progress.rds
+.DS_Store

@@ -2,16 +2,16 @@ project:
   type: website
 
 website:
-  title: "blog-template"
+  title: "Tin Nguyen | Data Stories"
+  description: "A blog about communicating data clearly, by Tin Nguyen (Monash University)."
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/etc5523-2022
+        href: https://github.com/tngu0386-oss
+        aria-label: GitHub
+
 format:
   html:
-    theme: cosmo
+    theme: [cosmo, custom.scss]
     css: styles.css
-
-
-

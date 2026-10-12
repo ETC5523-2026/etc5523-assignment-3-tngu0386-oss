@@ -5,9 +5,18 @@ about:
   template: jolla
   links:
     - icon: github
-      text: Github
-      href: https://github.com/etc5523-2022
-
+      text: GitHub
+      href: https://github.com/tngu0386-oss
+    - icon: envelope
+      text: Email
+      href: mailto:tngu0386@student.monash.edu
+    - icon: briefcase
+      text: Tay Au Wine
+      href: https://tayauwine.vn
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+Hi, I'm Tin — a graduate student at Monash University studying data science and analytics, with a particular interest in forecasting, risk, and turning messy data into a story people can actually act on.
+
+Alongside my studies, I work in business development for [Tay Au Wine](https://tayauwine.vn), a Vietnamese wine import business, where I get to apply the same data skills to real commercial decisions — from landed-cost modelling to import partnership strategy.
+
+This blog is where I practice the other half of the job: explaining what the data means, clearly, to people who weren't in the room when the analysis happened. When I'm not staring at a screen, you'll usually find me trekking somewhere in the Dandenong Ranges.

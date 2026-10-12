@@ -1,0 +1,38 @@
+/*-- scss:defaults --*/
+
+// Google Fonts are loaded in scss:rules below (quarto strips @import from defaults)
+$font-family-sans-serif: "Nunito Sans", -apple-system, "Segoe UI", sans-serif;
+$font-family-serif: "Merriweather", Georgia, serif;
+
+$body-bg: #FAF7F2;      // warm off-white, easier on the eyes than stark white
+$body-color: #2B2B2B;   // near-black body text for strong readability
+$link-color: #B5502D;   // warm terracotta accent for links
+
+$navbar-bg: #0B4F6C;    // deep teal navbar
+$navbar-fg: #FAF7F2;
+
+$headings-color: #0B4F6C; // deep teal headings, distinct from body text
+$headings-font-family: $font-family-serif;
+
+/*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito+Sans:wght@400;600&display=swap');
+
+h1, h2, h3, h4 {
+  font-family: $headings-font-family;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.quarto-title-banner {
+  background-color: $navbar-bg;
+  color: $navbar-fg;
+}
+
+.quarto-title-banner h1.title {
+  color: $navbar-fg;
+}

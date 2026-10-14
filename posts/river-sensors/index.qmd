@@ -21,38 +21,45 @@ Cheap electronic sensors now make it possible to leave a device in a river, logg
 
 ## What the researchers did, and what they found
 
-A research team studied three rivers that could hardly be more different. They used open data from the US National Ecological Observatory Network, a government-funded network of environmental sensors [@kermorvant2023]. @tbl-rivers shows the three sites.
+**Where the data came from.** A research team studied three rivers that could hardly be more different. They used open sensor data from the US National Ecological Observatory Network (NEON), a government-funded network of environmental sensors [@kermorvant2023]. @tbl-rivers shows the three sites.
 
-| River | Where | What's nearby | Nitrate pollution |
+| River | Setting | Nitrate pollution | Typical nitrate |
 |---|---|---|---|
-| Arikaree River | Colorado | Dry farmland | Low |
-| Caribou-Poker Creek | Alaska | Untouched wilderness | Medium |
-| Lewis Run | Virginia | A town and a wastewater plant | High |
+| Arikaree River | Colorado, dry farmland | Low | 5.5 |
+| Caribou-Poker Creek | Alaska, untouched wilderness | Medium | 28.4 |
+| Lewis Run | Virginia, a town and a wastewater plant | High | 192 |
 
-: Three rivers in very different settings, chosen because they were not expected to behave alike {#tbl-rivers}
+: Three rivers in very different settings, chosen because they were not expected to behave alike. Nitrate is in micromoles per litre. {#tbl-rivers}
 
 @fig-nitrate shows how far apart they are. Nitrate at Lewis Run was about 35 times higher than at the cleanest river.
 
-![Nitrate varied enormously between the three rivers studied.](nitrate_by_river.png){#fig-nitrate width="90%"}
+![Nitrate varied enormously between the three rivers studied.](nitrate_by_river.png){#fig-nitrate fig-alt="Bar chart of typical nitrate at three rivers: Arikaree River 5.5, Caribou-Poker Creek 28.4 and Lewis Run 192 micromoles per litre. Lewis Run stands out in orange." width="90%"}
 
 The team used a statistical method that can follow curved, uneven patterns instead of assuming straight lines. With it they predicted nitrate very accurately. Their predictions captured 99% of the ups and downs at every river. An earlier machine-learning method had managed 89%.
 
-The more interesting result was *what* made the predictions work. The same six easy-to-measure signals were useful at all three rivers:
+The more interesting result was *what* made the predictions work. The same six easy-to-measure signals in @tbl-signals were useful at all three rivers.
 
-- electrical conductivity
-- dissolved oxygen
-- water temperature
-- cloudiness
-- time of day
-- water level
+| Signal | What it tells you, in plain words |
+|---|---|
+| Electrical conductivity | How easily the water carries electricity, which rises with dissolved salts and minerals |
+| Dissolved oxygen | How much oxygen is in the water for fish and plants |
+| Water temperature | How warm the water is |
+| Cloudiness | How murky the water is |
+| Time of day | The hour the reading was taken |
+| Water level | How high the river is |
+
+: The six everyday measurements that predicted nitrate at all three rivers {#tbl-signals}
 
 The exact link between, say, temperature and nitrate differed from river to river. The list of what to measure did not.
 
-That answers both questions from the start. A standard, cheap sensor kit can predict nitrate. The same kit works across very different rivers, as long as the model is recalibrated for each one.
+**Back to the two questions from the start:**
+
+1. **Can a few cheap signals predict nitrate?** Yes. The six signals in @tbl-signals captured 99% of nitrate's ups and downs.
+2. **Does it work on very different rivers?** Yes. The same six signals worked at the farmland, wilderness and town rivers, as long as the model was recalibrated for each one.
 
 ## Conclusion: cheap sensors, smart models, healthier rivers
 
-We started with a monitoring gap. Bottle samples are too slow and too sparse to catch a pollutant that changes within hours. The study narrows that gap. Six cheap signals reproduced 99% of nitrate's movement at all three rivers. A standard sensor kit plus a model recalibrated for each river is a realistic substitute where a dedicated nitrate sensor is unaffordable. That matters most to anyone deciding where to spend a monitoring budget.
+We started with a monitoring gap. Bottle samples are too slow and too sparse to catch a pollutant that changes within hours. The study narrows that gap. In three very different rivers, six cheap signals reproduced 99% of nitrate's movement, and the same six worked at every site. A standard sensor kit plus a model recalibrated for each river is a realistic substitute where a dedicated nitrate sensor is unaffordable. That matters most to anyone deciding where to spend a monitoring budget.
 
 What the study does not show is just as important. Three rivers cannot cover every pollution source. The predictions were checked against nitrate sensor readings, not laboratory samples, so the 99% describes agreement with another sensor. Each new river also needs its own period of nitrate data to fit the model. The saving comes from sensors that stay in place long term, not from skipping nitrate measurement altogether. Treat the result as strong evidence that the approach is worth trialling, not as proof that it works everywhere.
 

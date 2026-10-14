@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m Tin, a Master of Business Analytics student at Monash University in Melbourne and a Certified Analytics Professional (INFORMS). I finished a Bachelor of Business in Marketing and Business Statistics at Monash in 2025.\nFor the last three years I’ve sold wine at Wine Selectors, which taught me how customers decide. I also worked there as a data analyst: I built the daily and weekly sales dashboards the executive team used, and a forecasting model to size a new airport kiosk opportunity. When I presented the results to the General Manager, they changed how the stands were staffed.\nI work mostly in R, Python, SQL, Excel and Power BI, and what I care about most is explaining results to people who aren’t analysts. This blog is where I practise that, as part of ETC5523 Communicating with Data. In 2020 I led a team to first prize in a competition with a data-driven irrigation prototype for the Mekong Delta.\nAway from the screen, I’ve played guitar for ten years and I play soccer. I speak English and Vietnamese."
+  },
+  {
+    "objectID": "posts/river-sensors/index.html",
+    "href": "posts/river-sensors/index.html",
+    "title": "Can a Sensor Tell If a River Is Healthy?",
+    "section": "",
+    "text": "How polluted is a river right now? The traditional answer is old-fashioned. Someone drives out, dips a bottle in the water and posts it to a lab. Days later you get one number, for one moment, at one spot.\nThat is a problem for nitrate. It washes into rivers from fertiliser, livestock waste and city runoff. Too much of it feeds algae blooms and can make water unsafe to drink. Nitrate can swing within a single day with rain, sunlight and the time of day. A sample taken on Tuesday morning says little about Monday night.\nCheap electronic sensors now make it possible to leave a device in a river, logging a reading every 15 minutes all year. The catch is that a sensor only measures what it was built to measure, and nitrate sensors are costly. So researchers asked two practical questions:\n\nCan a few cheap, easy-to-measure signals predict nitrate, so we don’t need a nitrate sensor everywhere?\nDoes an answer that works on one river also work on a very different one?"
+  },
+  {
+    "objectID": "posts/river-sensors/index.html#the-problem-testing-a-river-is-slow-and-pollution-doesnt-wait",
+    "href": "posts/river-sensors/index.html#the-problem-testing-a-river-is-slow-and-pollution-doesnt-wait",
+    "title": "Can a Sensor Tell If a River Is Healthy?",
+    "section": "",
+    "text": "How polluted is a river right now? The traditional answer is old-fashioned. Someone drives out, dips a bottle in the water and posts it to a lab. Days later you get one number, for one moment, at one spot.\nThat is a problem for nitrate. It washes into rivers from fertiliser, livestock waste and city runoff. Too much of it feeds algae blooms and can make water unsafe to drink. Nitrate can swing within a single day with rain, sunlight and the time of day. A sample taken on Tuesday morning says little about Monday night.\nCheap electronic sensors now make it possible to leave a device in a river, logging a reading every 15 minutes all year. The catch is that a sensor only measures what it was built to measure, and nitrate sensors are costly. So researchers asked two practical questions:\n\nCan a few cheap, easy-to-measure signals predict nitrate, so we don’t need a nitrate sensor everywhere?\nDoes an answer that works on one river also work on a very different one?"
+  },
+  {
+    "objectID": "posts/river-sensors/index.html#what-the-researchers-did-and-what-they-found",
+    "href": "posts/river-sensors/index.html#what-the-researchers-did-and-what-they-found",
+    "title": "Can a Sensor Tell If a River Is Healthy?",
+    "section": "What the researchers did, and what they found",
+    "text": "What the researchers did, and what they found\nA research team studied three rivers that could hardly be more different. They used open data from the US National Ecological Observatory Network, a government-funded network of environmental sensors (Kermorvant et al. 2023). Table 1 shows the three sites.\n\n\n\nTable 1: Three rivers in very different settings, chosen because they were not expected to behave alike\n\n\n\n\n\nRiver\nWhere\nWhat’s nearby\nNitrate pollution\n\n\n\n\nArikaree River\nColorado\nDry farmland\nLow\n\n\nCaribou-Poker Creek\nAlaska\nUntouched wilderness\nMedium\n\n\nLewis Run\nVirginia\nA town and a wastewater plant\nHigh\n\n\n\n\n\n\nFigure 1 shows how far apart they are. Nitrate at Lewis Run was about 35 times higher than at the cleanest river.\n\n\n\n\n\n\nFigure 1: Nitrate varied enormously between the three rivers studied.\n\n\n\nThe team used a statistical method that can follow curved, uneven patterns instead of assuming straight lines. With it they predicted nitrate very accurately. Their predictions captured 99% of the ups and downs at every river. An earlier machine-learning method had managed 89%.\nThe more interesting result was what made the predictions work. The same six easy-to-measure signals were useful at all three rivers:\n\nelectrical conductivity\ndissolved oxygen\nwater temperature\ncloudiness\ntime of day\nwater level\n\nThe exact link between, say, temperature and nitrate differed from river to river. The list of what to measure did not.\nThat answers both questions from the start. A standard, cheap sensor kit can predict nitrate. The same kit works across very different rivers, as long as the model is recalibrated for each one."
+  },
+  {
+    "objectID": "posts/river-sensors/index.html#conclusion-cheap-sensors-smart-models-healthier-rivers",
+    "href": "posts/river-sensors/index.html#conclusion-cheap-sensors-smart-models-healthier-rivers",
+    "title": "Can a Sensor Tell If a River Is Healthy?",
+    "section": "Conclusion: cheap sensors, smart models, healthier rivers",
+    "text": "Conclusion: cheap sensors, smart models, healthier rivers\nWe started with a monitoring gap. Bottle samples are too slow and too sparse to catch a pollutant that changes within hours. The study narrows that gap. Six cheap signals reproduced 99% of nitrate’s movement at all three rivers. A standard sensor kit plus a model recalibrated for each river is a realistic substitute where a dedicated nitrate sensor is unaffordable. That matters most to anyone deciding where to spend a monitoring budget.\nWhat the study does not show is just as important. Three rivers cannot cover every pollution source. The predictions were checked against nitrate sensor readings, not laboratory samples, so the 99% describes agreement with another sensor. Each new river also needs its own period of nitrate data to fit the model. The saving comes from sensors that stay in place long term, not from skipping nitrate measurement altogether. Treat the result as strong evidence that the approach is worth trialling, not as proof that it works everywhere."
+  },
+  {
+    "objectID": "posts/river-sensors/index.html#a-note-on-this-post-versus-the-paper",
+    "href": "posts/river-sensors/index.html#a-note-on-this-post-versus-the-paper",
+    "title": "Can a Sensor Tell If a River Is Healthy?",
+    "section": "A note on this post versus the paper",
+    "text": "A note on this post versus the paper\nA journal article and a blog post do different jobs. The article (Kermorvant et al. 2023) is built to last. It is stand-alone, so a reader needs nothing else to follow it. It is archival, with a permanent identifier (a DOI) that will still resolve years from now. It is defensible: it was peer reviewed, and it reports the data, model and assumptions in enough detail for other scientists to check and challenge the work. That format has lasted centuries because it lets claims be tested, not just believed.\nThis post makes the opposite trade. It is quick to read and written for people who will never open a model specification. But it cannot be checked on its own, it carries no review, and it can be edited or removed at any time. That is why it leaves out the model details and points back to the paper. If you plan to rely on any number here, verify it against the article first."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Stories",
+    "section": "",
+    "text": "Can a Sensor Tell If a River Is Healthy?\n\n\nWhat scientists found after wiring up three very different rivers with water-quality sensors\n\n\n\nenvironment\n\nwater-quality\n\n\n\n\n\n\n\n\n\nOct 3, 2026\n\n\nTin Nguyen\n\n\n\n\n\nNo matching items"
+  }
+]

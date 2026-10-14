@@ -8,6 +8,9 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/tngu0386-oss
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/truong-tin-nguyen-39aa69152/
     - icon: envelope
       text: Email
       href: mailto:truongtin098@gmail.com

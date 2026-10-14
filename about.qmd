@@ -1,6 +1,7 @@
 ---
 title: "About"
 image: profile.jpg
+image-alt: "Headshot of Tin Nguyen"
 about:
   template: jolla
   links:
@@ -9,14 +10,13 @@ about:
       href: https://github.com/tngu0386-oss
     - icon: envelope
       text: Email
-      href: mailto:tngu0386@student.monash.edu
-    - icon: briefcase
-      text: Tay Au Wine
-      href: https://tayauwine.vn
+      href: mailto:truongtin098@gmail.com
 ---
 
-Hi, I'm Tin — a graduate student at Monash University studying data science and analytics, with a particular interest in forecasting, risk, and turning messy data into a story people can actually act on.
+I'm Tin, a Master of Business Analytics student at Monash University in Melbourne and a Certified Analytics Professional (INFORMS). I finished a Bachelor of Business in Marketing and Business Statistics at Monash in 2025.
 
-Alongside my studies, I work in business development for [Tay Au Wine](https://tayauwine.vn), a Vietnamese wine import business, where I get to apply the same data skills to real commercial decisions — from landed-cost modelling to import partnership strategy.
+For the last three years I've sold wine at Wine Selectors, which taught me how customers decide. I also worked there as a data analyst: I built the daily and weekly sales dashboards the executive team used, and a forecasting model to size a new airport kiosk opportunity. When I presented the results to the General Manager, they changed how the stands were staffed.
 
-This blog is where I practice the other half of the job: explaining what the data means, clearly, to people who weren't in the room when the analysis happened. When I'm not staring at a screen, you'll usually find me trekking somewhere in the Dandenong Ranges.
+I work mostly in R, Python, SQL, Excel and Power BI, and what I care about most is explaining results to people who aren't analysts. This blog is where I practise that, as part of ETC5523 Communicating with Data. In 2020 I led a team to first prize in a competition with a data-driven irrigation prototype for the Mekong Delta.
+
+Away from the screen, I've played guitar for ten years and I play soccer. I speak English and Vietnamese.

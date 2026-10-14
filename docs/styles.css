@@ -1,0 +1,10 @@
+/* Small extra tweaks that sit on top of custom.scss */
+
+.quarto-title-banner .quarto-title-author,
+.quarto-title-banner .quarto-title-meta {
+  color: #FAF7F2;
+}
+
+pre.sourceCode, div.sourceCode {
+  border-radius: 6px;
+}
